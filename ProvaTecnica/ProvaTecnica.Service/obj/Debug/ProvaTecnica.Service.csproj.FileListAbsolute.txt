@@ -1,0 +1,14 @@
+E:\Workspace 2\ProvaTecnica\ProvaTecnica\ProvaTecnica.Service\bin\Debug\ProvaTecnica.Service.dll
+E:\Workspace 2\ProvaTecnica\ProvaTecnica\ProvaTecnica.Service\bin\Debug\ProvaTecnica.Service.pdb
+E:\Workspace 2\ProvaTecnica\ProvaTecnica\ProvaTecnica.Service\bin\Debug\Model.dll
+E:\Workspace 2\ProvaTecnica\ProvaTecnica\ProvaTecnica.Service\bin\Debug\ProvaPratica.Dto.dll
+E:\Workspace 2\ProvaTecnica\ProvaTecnica\ProvaTecnica.Service\bin\Debug\ProvaTecnica.IRepository.dll
+E:\Workspace 2\ProvaTecnica\ProvaTecnica\ProvaTecnica.Service\bin\Debug\ProvaTecnica.IService.dll
+E:\Workspace 2\ProvaTecnica\ProvaTecnica\ProvaTecnica.Service\bin\Debug\Model.pdb
+E:\Workspace 2\ProvaTecnica\ProvaTecnica\ProvaTecnica.Service\bin\Debug\ProvaPratica.Dto.pdb
+E:\Workspace 2\ProvaTecnica\ProvaTecnica\ProvaTecnica.Service\bin\Debug\ProvaTecnica.IRepository.pdb
+E:\Workspace 2\ProvaTecnica\ProvaTecnica\ProvaTecnica.Service\bin\Debug\ProvaTecnica.IService.pdb
+E:\Workspace 2\ProvaTecnica\ProvaTecnica\ProvaTecnica.Service\obj\Debug\ProvaTecnica.Service.csprojResolveAssemblyReference.cache
+E:\Workspace 2\ProvaTecnica\ProvaTecnica\ProvaTecnica.Service\obj\Debug\ProvaTecnica.Service.csproj.CoreCompileInputs.cache
+E:\Workspace 2\ProvaTecnica\ProvaTecnica\ProvaTecnica.Service\obj\Debug\ProvaTecnica.Service.dll
+E:\Workspace 2\ProvaTecnica\ProvaTecnica\ProvaTecnica.Service\obj\Debug\ProvaTecnica.Service.pdb

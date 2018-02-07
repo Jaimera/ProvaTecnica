@@ -1,0 +1,286 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WebApi</name>
+    </assembly>
+    <members>
+        <member name="T:ProvaTecnica.WebApi.App_Start.ApiExceptionHandler">
+            <summary>
+            Implementação de <see cref="T:System.Web.Http.ExceptionHandling.ExceptionHandler"/>.
+            </summary>
+        </member>
+        <member name="M:ProvaTecnica.WebApi.App_Start.ApiExceptionHandler.Handle(System.Web.Http.ExceptionHandling.ExceptionHandlerContext)">
+            <summary>
+            Sobreescreve <see cref="M:System.Web.Http.ExceptionHandling.ExceptionHandler.Handle(System.Web.Http.ExceptionHandling.ExceptionHandlerContext)"/>
+            </summary>
+            <param name="context">Instancia de <see cref="T:System.Web.Http.ExceptionHandling.ExceptionHandlerContext"/>.</param>
+        </member>
+        <member name="T:ProvaTecnica.WebApi.App_Start.ApiExceptionLogger">
+            <summary>
+            Implementação de <see cref="T:System.Web.Http.ExceptionHandling.ExceptionLogger"/>.
+            </summary>
+        </member>
+        <member name="M:ProvaTecnica.WebApi.App_Start.ApiExceptionLogger.LogAsync(System.Web.Http.ExceptionHandling.ExceptionLoggerContext,System.Threading.CancellationToken)">
+            <summary>
+            Sobrescreve <see cref="M:System.Web.Http.ExceptionHandling.ExceptionLogger.LogAsync(System.Web.Http.ExceptionHandling.ExceptionLoggerContext,System.Threading.CancellationToken)"/>
+            </summary>
+            <param name="context">Instancia de <see cref="T:System.Web.Http.ExceptionHandling.ExceptionLoggerContext"/>.</param>
+            <param name="cancellationToken">Token para cancelar</param>
+            <returns></returns>
+        </member>
+        <member name="T:ProvaTecnica.WebApi.App_Start.AutofacConfig">
+            <summary>
+            Represent Autofac configuration.
+            </summary>
+        </member>
+        <member name="F:ProvaTecnica.WebApi.App_Start.AutofacConfig.Container">
+            <summary>
+            Configured instance of <see cref="T:Autofac.IContainer"/>
+            <remarks><see cref="M:ProvaTecnica.WebApi.App_Start.AutofacConfig.Configure(System.Web.Http.HttpConfiguration)"/> must be called before trying to get Container instance.</remarks>
+            </summary>
+        </member>
+        <member name="M:ProvaTecnica.WebApi.App_Start.AutofacConfig.Configure(System.Web.Http.HttpConfiguration)">
+            <summary>
+            Initializes and configures instance of <see cref="T:Autofac.IContainer"/>.
+            </summary>
+            <param name="configuration"></param>
+        </member>
+        <member name="T:ProvaTecnica.WebApi.App_Start.CorsConfig">
+            <summary>
+            Represents CORS configuration.
+            </summary>
+        </member>
+        <member name="F:ProvaTecnica.WebApi.App_Start.CorsConfig.Options">
+            <summary>
+            Instance of <see cref="T:Microsoft.Owin.Cors.CorsOptions"/> that is set to allow all by default.
+            </summary>
+        </member>
+        <member name="M:ProvaTecnica.WebApi.App_Start.CorsConfig.ConfigureCors(System.String)">
+            <summary>
+            Initializes and configures <see cref="T:Microsoft.Owin.Cors.CorsOptions"/> instance.
+            </summary>
+            <param name="origins">String of allowed origins delimited by: ';'</param>
+        </member>
+        <member name="T:ProvaTecnica.WebApi.App_Start.FormatterConfig">
+            <summary>
+            Represents formatter configuration.
+            </summary>
+        </member>
+        <member name="M:ProvaTecnica.WebApi.App_Start.FormatterConfig.Configure(System.Web.Http.HttpConfiguration)">
+            <summary>
+            Configures formatter to use JSON and removes XML formatter.
+            </summary>
+            <param name="configuration"></param>
+        </member>
+        <member name="T:ProvaTecnica.WebApi.App_Start.RouteConfig">
+            <summary>
+            Represents route configuration.
+            </summary>
+        </member>
+        <member name="M:ProvaTecnica.WebApi.App_Start.RouteConfig.Configure(System.Web.Http.HttpConfiguration)">
+            <summary>
+            Configures Web API routes.
+            </summary>
+            <param name="configuration"></param>
+        </member>
+        <member name="T:ProvaTecnica.WebApi.App_Start.ServiceConfig">
+            <summary>
+            Represents configuration for <see cref="T:System.Web.Http.ExceptionHandling.IExceptionHandler"/> and <see cref="T:System.Web.Http.ExceptionHandling.IExceptionLogger"/>.
+            </summary>
+        </member>
+        <member name="M:ProvaTecnica.WebApi.App_Start.ServiceConfig.Configure(System.Web.Http.HttpConfiguration)">
+            <summary>
+            COnfigures custom implementations for: <see cref="T:System.Web.Http.ExceptionHandling.IExceptionHandler"/> and <see cref="T:System.Web.Http.ExceptionHandling.IExceptionLogger"/>.
+            </summary>
+            <param name="configuration"></param>
+        </member>
+        <member name="T:ProvaTecnica.WebApi.App_Start.SwaggerConfig">
+            <summary>
+            Represent Swagger configuration.
+            </summary>
+        </member>
+        <member name="M:ProvaTecnica.WebApi.App_Start.SwaggerConfig.Configure(System.Web.Http.HttpConfiguration)">
+            <summary>
+            Configures Swagger API 
+            </summary>
+            <param name="configuration">Instance of <see cref="T:System.Web.Http.HttpConfiguration"/>.</param>
+        </member>
+        <member name="T:ProvaTecnica.WebApi.Controllers.CandidatoController">
+            <summary>
+            Listagem, criação, edição e exclusão de candidatos para entrevistas
+            </summary>
+        </member>
+        <member name="M:ProvaTecnica.WebApi.Controllers.CandidatoController.Get">
+            <summary>
+            Obtem lista de candidatos
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ProvaTecnica.WebApi.Controllers.CandidatoController.Get(System.Guid)">
+            <summary>
+            Obter candidato pelo id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ProvaTecnica.WebApi.Controllers.CandidatoController.Post(ProvaPratica.Dto.DtoCandidato)">
+            <summary>
+            Insere uma nova candidato
+            </summary>
+            <param name="candidato">Nome e vaga do candidato</param>
+        </member>
+        <member name="M:ProvaTecnica.WebApi.Controllers.CandidatoController.PostTecnologias(System.Guid,System.Collections.Generic.List{System.Guid})">
+            <summary>
+            Insere tecnologias do candidato
+            </summary>
+            <param name="id">Id do candidato</param>
+            <param name="idsTecnologia">Lista de tecnologias de dominio</param>
+            <returns>Id do candidato</returns>
+        </member>
+        <member name="T:ProvaTecnica.WebApi.Controllers.OcupacaoController">
+            <summary>
+            Listagem, criação, edição e exclusão de vagas abertas na empresa
+            </summary>
+        </member>
+        <member name="M:ProvaTecnica.WebApi.Controllers.OcupacaoController.Get">
+            <summary>
+            Obtem lista de vagas
+            </summary>
+            <returns>Array de vagas</returns>
+        </member>
+        <member name="M:ProvaTecnica.WebApi.Controllers.OcupacaoController.Get(System.Guid)">
+            <summary>
+            Obter vaga pelo id
+            </summary>
+            <param name="id">Id da vaga</param>
+            <returns>Vaga</returns>
+        </member>
+        <member name="M:ProvaTecnica.WebApi.Controllers.OcupacaoController.Post(System.String)">
+            <summary>
+            Insere uma nova vaga
+            </summary>
+            <param name="nome">Nome da vaga</param>
+            <returns>Vaga</returns>
+        </member>
+        <member name="M:ProvaTecnica.WebApi.Controllers.OcupacaoController.Put(System.Guid,System.String)">
+            <summary>
+            Atualiza uma vaga
+            </summary>
+            <param name="id">Guid da tecnologioa</param>
+            <param name="nome">Nome da vaga</param>
+            <returns>Vaga</returns>
+        </member>
+        <member name="M:ProvaTecnica.WebApi.Controllers.OcupacaoController.Delete(System.Guid)">
+            <summary>
+            Deleta uma vaga
+            </summary>
+            <param name="id">Id da vaga para exclusão</param>
+            <returns>Confirmação de vaga deletada</returns>
+        </member>
+        <member name="T:ProvaTecnica.WebApi.Controllers.TecnologiaController">
+            <summary>
+            Listagem, criação, edição e exclusão de tecnologias que a empresa trabalha
+            </summary>
+        </member>
+        <member name="M:ProvaTecnica.WebApi.Controllers.TecnologiaController.Get">
+            <summary>
+            Obtem lista de tecnologias
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ProvaTecnica.WebApi.Controllers.TecnologiaController.Get(System.Guid)">
+            <summary>
+            Obter tecnologia pelo id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ProvaTecnica.WebApi.Controllers.TecnologiaController.Post(System.String)">
+            <summary>
+            Insere uma nova tecnologia
+            </summary>
+            <param name="nome">Nome da tecnologia</param>
+        </member>
+        <member name="M:ProvaTecnica.WebApi.Controllers.TecnologiaController.Put(System.Guid,System.String)">
+            <summary>
+            Atualiza uma tecnologia
+            </summary>
+            <param name="id">Guid da tecnologioa</param>
+            <param name="nome">Nome da tecnologia</param>
+        </member>
+        <member name="M:ProvaTecnica.WebApi.Controllers.TecnologiaController.Delete(System.Guid)">
+            <summary>
+            Deleta uma tecnologia
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="T:ProvaTecnica.WebApi.Models.ErrorInfoModel">
+            <summary>
+            Represents error information that can be shown to user.
+            </summary>
+        </member>
+        <member name="P:ProvaTecnica.WebApi.Models.ErrorInfoModel.Message">
+            <summary>
+            Gets or sets error message.
+            </summary>
+        </member>
+        <member name="P:ProvaTecnica.WebApi.Models.ErrorInfoModel.TimeStamp">
+            <summary>
+            Gets or sets error date and time.
+            </summary>
+        </member>
+        <member name="P:ProvaTecnica.WebApi.Models.ErrorInfoModel.RequestUri">
+            <summary>
+            Gets or sets URI, Web API rout that has failed to complete.
+            </summary>
+        </member>
+        <member name="P:ProvaTecnica.WebApi.Models.ErrorInfoModel.ErrorId">
+            <summary>
+            <see cref="T:System.Guid"/> value that represents correlation identifier that can be used for tracking purposes.
+            </summary>
+        </member>
+        <member name="T:ProvaTecnica.WebApi.Models.HttpRequestModel">
+            <summary>
+            Represents a model that contain information and data about received HttpRequest.
+            </summary>
+        </member>
+        <member name="T:ProvaTecnica.WebApi.Startup">
+            <summary>
+            Represents the entry point into an application.
+            </summary>
+        </member>
+        <member name="M:ProvaTecnica.WebApi.Startup.Configuration(Owin.IAppBuilder)">
+            <summary>
+            Specifies how the ASP.NET application will respond to individual HTTP request.
+            </summary>
+            <param name="app">Instance of <see cref="T:Owin.IAppBuilder"/>.</param>
+        </member>
+        <member name="T:WebApi.Controllers.SelecaoController">
+            <summary>
+            Listagem de seleção de melhor candidato e cadastro de peso
+            </summary>
+        </member>
+        <member name="M:WebApi.Controllers.SelecaoController.GetCandidatos(System.Guid)">
+            <summary>
+            Obtem lista de candidatos para a seleção ordenado pelo peso
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.SelecaoController.Post(System.Guid)">
+            <summary>
+            Adiciona uma nova seleção apartir de uma ocupação
+            </summary>
+            <param name="ocupacaoId">Id da ocupação</param>
+            <returns>Id da seleção</returns>
+        </member>
+        <member name="M:WebApi.Controllers.SelecaoController.PostPeso(System.Guid,ProvaPratica.Dto.DtoTecnologiaPeso)">
+            <summary>
+            Adiciona peso para a tecnologia da seleção
+            </summary>
+            <param name="id">Id da seleção</param>
+            <param name="peso">Id da tecnologia e seu peso</param>
+            <returns>Id do peso</returns>
+        </member>
+    </members>
+</doc>

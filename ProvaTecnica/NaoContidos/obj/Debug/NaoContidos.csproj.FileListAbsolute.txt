@@ -1,0 +1,7 @@
+E:\Workspace 2\ProvaTecnica\ProvaTecnica\NaoContidos\bin\Debug\NaoContidos.exe.config
+E:\Workspace 2\ProvaTecnica\ProvaTecnica\NaoContidos\bin\Debug\NaoContidos.exe
+E:\Workspace 2\ProvaTecnica\ProvaTecnica\NaoContidos\bin\Debug\NaoContidos.pdb
+E:\Workspace 2\ProvaTecnica\ProvaTecnica\NaoContidos\obj\Debug\NaoContidos.csproj.CoreCompileInputs.cache
+E:\Workspace 2\ProvaTecnica\ProvaTecnica\NaoContidos\obj\Debug\NaoContidos.exe
+E:\Workspace 2\ProvaTecnica\ProvaTecnica\NaoContidos\obj\Debug\NaoContidos.pdb
+E:\Workspace 2\ProvaTecnica\ProvaTecnica\NaoContidos\obj\Debug\NaoContidos.csprojResolveAssemblyReference.cache

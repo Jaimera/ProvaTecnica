@@ -1,0 +1,7 @@
+E:\Workspace 2\ProvaTecnica\ProvaTecnica\Collatz\bin\Debug\Collatz.exe.config
+E:\Workspace 2\ProvaTecnica\ProvaTecnica\Collatz\bin\Debug\Collatz.exe
+E:\Workspace 2\ProvaTecnica\ProvaTecnica\Collatz\bin\Debug\Collatz.pdb
+E:\Workspace 2\ProvaTecnica\ProvaTecnica\Collatz\obj\Debug\Collatz.csproj.CoreCompileInputs.cache
+E:\Workspace 2\ProvaTecnica\ProvaTecnica\Collatz\obj\Debug\Collatz.exe
+E:\Workspace 2\ProvaTecnica\ProvaTecnica\Collatz\obj\Debug\Collatz.pdb
+E:\Workspace 2\ProvaTecnica\ProvaTecnica\Collatz\obj\Debug\Collatz.csprojResolveAssemblyReference.cache

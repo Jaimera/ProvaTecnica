@@ -1,0 +1,7 @@
+E:\Workspace 2\ProvaTecnica\ProvaTecnica\Impares\bin\Debug\Impares.exe.config
+E:\Workspace 2\ProvaTecnica\ProvaTecnica\Impares\bin\Debug\Impares.exe
+E:\Workspace 2\ProvaTecnica\ProvaTecnica\Impares\bin\Debug\Impares.pdb
+E:\Workspace 2\ProvaTecnica\ProvaTecnica\Impares\obj\Debug\Impares.csproj.CoreCompileInputs.cache
+E:\Workspace 2\ProvaTecnica\ProvaTecnica\Impares\obj\Debug\Impares.exe
+E:\Workspace 2\ProvaTecnica\ProvaTecnica\Impares\obj\Debug\Impares.pdb
+E:\Workspace 2\ProvaTecnica\ProvaTecnica\Impares\obj\Debug\Impares.csprojResolveAssemblyReference.cache

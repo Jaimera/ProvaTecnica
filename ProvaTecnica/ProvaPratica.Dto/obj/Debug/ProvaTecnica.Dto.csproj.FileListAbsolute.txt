@@ -1,0 +1,5 @@
+E:\Workspace 2\ProvaTecnica\ProvaTecnica\ProvaPratica.Dto\bin\Debug\ProvaPratica.Dto.dll
+E:\Workspace 2\ProvaTecnica\ProvaTecnica\ProvaPratica.Dto\bin\Debug\ProvaPratica.Dto.pdb
+E:\Workspace 2\ProvaTecnica\ProvaTecnica\ProvaPratica.Dto\obj\Debug\ProvaTecnica.Dto.csproj.CoreCompileInputs.cache
+E:\Workspace 2\ProvaTecnica\ProvaTecnica\ProvaPratica.Dto\obj\Debug\ProvaPratica.Dto.dll
+E:\Workspace 2\ProvaTecnica\ProvaTecnica\ProvaPratica.Dto\obj\Debug\ProvaPratica.Dto.pdb

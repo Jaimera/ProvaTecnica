@@ -1,0 +1,10 @@
+E:\Workspace 2\ProvaTecnica\ProvaTecnica\ProvaTecnica.IService\bin\Debug\ProvaTecnica.IService.dll
+E:\Workspace 2\ProvaTecnica\ProvaTecnica\ProvaTecnica.IService\bin\Debug\ProvaTecnica.IService.pdb
+E:\Workspace 2\ProvaTecnica\ProvaTecnica\ProvaTecnica.IService\bin\Debug\Model.dll
+E:\Workspace 2\ProvaTecnica\ProvaTecnica\ProvaTecnica.IService\bin\Debug\ProvaPratica.Dto.dll
+E:\Workspace 2\ProvaTecnica\ProvaTecnica\ProvaTecnica.IService\bin\Debug\Model.pdb
+E:\Workspace 2\ProvaTecnica\ProvaTecnica\ProvaTecnica.IService\bin\Debug\ProvaPratica.Dto.pdb
+E:\Workspace 2\ProvaTecnica\ProvaTecnica\ProvaTecnica.IService\obj\Debug\ProvaTecnica.IService.csprojResolveAssemblyReference.cache
+E:\Workspace 2\ProvaTecnica\ProvaTecnica\ProvaTecnica.IService\obj\Debug\ProvaTecnica.IService.csproj.CoreCompileInputs.cache
+E:\Workspace 2\ProvaTecnica\ProvaTecnica\ProvaTecnica.IService\obj\Debug\ProvaTecnica.IService.dll
+E:\Workspace 2\ProvaTecnica\ProvaTecnica\ProvaTecnica.IService\obj\Debug\ProvaTecnica.IService.pdb
