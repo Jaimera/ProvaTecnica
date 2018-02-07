@@ -1,0 +1,53 @@
+<div class="container">
+  <h2>Entrevistas</h2>
+
+  <form>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="candidato">Nome do candidato: </label>
+        <input class="form-control" id="candidato" name="nome" [(ngModel)]="nome" placeholder="João">
+      </div>
+      <div class="form-group col-md-6">
+        <label class="mr-sm-2" for="vagas">Vaga:</label>
+        <select name="vagaSelecionada" [(ngModel)]="vagaSelecionada" class="custom-select mr-sm-2" id="vagas" placeholder="ewq">
+          <option value="null" disabled="true" [selected]="!vagaSelecionada">Escolha</option>
+          <option *ngFor="let vaga of vagas" [ngValue]="vaga">{{vaga.nome}}</option>
+        </select>
+      </div>
+      <div class="form-group col-md-6">
+        <label for="options">Tecnologias:</label>
+        <div *ngFor="let tec of tecnologias">
+          <label>
+            <input type="checkbox"
+                   name="tec"
+                   value="{{tec.nome}}"
+                   [(ngModel)]="tec.selecionado" />
+            {{tec.nome}}
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <button *ngIf="candidatoEdicao == null" type="button" class="btn btn-success" (click)="adicionar()">Adicionar</button>
+    <button *ngIf="candidatoEdicao != null" type="button" class="btn btn-primary" (click)="atualizar()">Atualizar</button>
+  </form>
+
+  <div *ngIf="candidatos && candidatos.length > 0" style="padding-top: 20px">
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Nome do candidato</th>
+          <th scope="col">Vaga</th>
+        </tr>
+      </thead>
+      <tbody *ngFor="let can of candidatos">
+        <tr>
+          <th>{{can.id}}</th>
+          <td>{{can.nome}}</td>
+          <td>{{can.ocupacao.nome}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

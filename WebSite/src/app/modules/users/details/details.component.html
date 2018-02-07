@@ -1,0 +1,33 @@
+<div class="container">
+
+  <div class="row justify-content-around">
+    <div class="col-4">
+      <img *ngIf="detail" [src]="detail.avatar_url" class="img-thumbnail" style="width: 300px">
+    </div>
+
+    <div class="col">
+      <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link" [ngClass]="{ 'active': showOverview }" (click)="navOver()" data-toggle="tab" role="tab" [routerLink]="" id="overview-tab"
+              aria-controls="overview" >Detalhes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [ngClass]="{ 'active': showRepos }" (click)="navRepos()" data-toggle="tab" role="tab" [routerLink]="" id="repos-tab"
+             aria-controls="repos" >
+            Repositorios
+            <span *ngIf="repos" class="badge badge-pill badge-success">{{repos.length}}</span>
+          </a>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade" [ngClass]="{'show active': showOverview}" id="overview" role="tabpanel" aria-labelledby="overview-tab">
+          <app-overview [detail]="detail"></app-overview>
+        </div>
+        <div class="tab-pane fade" [ngClass]="{'show active': showRepos}" id="repos" role="tabpanel" aria-labelledby="repos-tab">
+          <app-repository [repos]="repos"></app-repository>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

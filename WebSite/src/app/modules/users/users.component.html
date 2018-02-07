@@ -1,0 +1,24 @@
+<div class="container">
+  <h2>Usúarios do GitHub</h2>
+
+
+  <router-outlet></router-outlet>
+
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col"></th>
+        <th scope="col">#</th>
+        <th scope="col">Login</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="user-item" *ngFor="let user of users" [routerLink]="[user.login]">
+        <th scope="row"><img [src]="user.avatar_url" style="height: 50px" /></th>
+        <td>{{user.id}}</td>
+        <td class="login-name" >{{user.login}}</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>

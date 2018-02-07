@@ -1,0 +1,36 @@
+<div class="container">
+  <h2>Tecnologias</h2>
+
+  <form>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="tecnologia">Nome: </label>
+        <input class="form-control" id="tecnologia" name="nome" [(ngModel)]="nome" placeholder="JavaScript">
+      </div>
+    </div>
+    <button *ngIf="tecnologiaEdicao == null" type="button" class="btn btn-success" (click)="adicionar()">Adicionar</button>
+    <button *ngIf="tecnologiaEdicao != null" type="button" class="btn btn-primary" (click)="atualizar()">Atualizar</button>
+  </form>
+
+  <div *ngIf="tecnologias && tecnologias.length > 0" style="padding-top: 20px">
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Nome da tecnologia</th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody *ngFor="let tec of tecnologias">
+        <tr>
+          <th>{{tec.id}}</th>
+          <td>{{tec.nome}}</td>
+          <td>
+            <button type="button" class="btn btn-warning" (click)="editar(tec)">Editar</button>
+            <button type="button" class="btn btn-danger" (click)="remover(tec.id)">Remover</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
